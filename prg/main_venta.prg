@@ -207,7 +207,7 @@ ENDIF
 		SET EXACT ON 		
 		IF nTamaño2 > 0 	
 			SELECT NOTAS_REPORTES
-			LOCATE FOR NOTA_1 = ALLTRIM(Vlc_llave_desencriptada) AND  NOTA_2 = ALLTRIM(Vlc_mac_encriptada) AND active = .t.
+			LOCATE FOR NOTA_1 = ALLTRIM(Vlc_llave_desencriptada) AND active = .t.
 			IF FOUND()								
 				USE IN NOTAS_REPORTES
 				USE IN LLAVE_DES					
